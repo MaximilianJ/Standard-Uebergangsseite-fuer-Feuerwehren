@@ -27,3 +27,7 @@ Im Ordner **img** sind alle Bilder die durch ersetzen ausgetauscht werden könne
 Anschließend alles auf dem eigenen Webspace hochladen. 
 Die Domain muss auf den Ordner verweisen in dem die **index.php** Datei liegt.
 Die anderen Dateien auf der obersten ebene wie *.gitignore*, *LICENSE* und *README.md* werden nicht benötigt und können gelöscht werden.
+
+## DEMO der Seite
+![DEMO Freiwillige Feuerwehr Musterstadt](https://user-images.githubusercontent.com/17827542/110370313-ccb13480-804b-11eb-8554-4d2f4f466cc6.png)
+
