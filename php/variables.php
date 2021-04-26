@@ -40,10 +40,16 @@ $social_left = "Wir möchten Sie nicht nur auf unserer Website willkommen heiße
 $social_right = "Auf Facebook versorgen wir Sie mit interessanten Neuigkeiten rund um unsere Feuerwehr. Spannende Inhalte warten hier auf Sie.";
 
 //Link zum großen Social Media Button
-$social_link = "https://www.facebook.com/freiwilligefeuerwehrmusterstadtundsoweiter";
+$social_link1 = "https://www.facebook.com/freiwilligefeuerwehrmusterstadtundsoweiter";
 
 //Zugehöriger Font Aweesome Button. Z.B. Facebook oder Instagram, Twitter etc.
-$social_button="fab fa-facebook-f fa-5x";// Das hier wäre es bspw. für Instagram "fab fa-instagram fa-5x"
+$social_button1="fab fa-facebook-f fa-5x";// Das hier wäre es bspw. für Instagram "fab fa-instagram fa-5x"
+
+//Link zum 2.großen Social Media Button. Leer lassen zum Deaktivieren. Dann wird der erste zentriert dargestellt
+$social_link2 = "";
+
+//Zugehöriger Font Aweesome Button. Z.B. Facebook oder Instagram, Twitter etc.
+$social_button2="fab fa-instagram fa-5x";// Das hier wäre es bspw. für Instagram "fab fa-instagram fa-5x"
 
 
 

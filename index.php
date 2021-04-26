@@ -11,21 +11,21 @@ include 'php/variables.php';
     <meta name="keywords" content="<?php echo $meta_keywords; ?>"/>
     <meta name="author" content="<?php echo $meta_author; ?>"/>
     <meta name="robots" content="index, nofollow"/>
-    <link rel="canonical" href="<?php echo $site_domain; ?>" />
-    <meta property="og:locale" content="de_DE" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php echo $site_title; ?>" />
-    <meta property="og:description" content="<?php echo $meta_description; ?>" />
-    <meta property="og:url" content="<?php echo $site_domain; ?>" />
-    <meta property="og:site_name" content="<?php echo $site_name; ?>" />
-    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="<?php echo $site_domain; ?>"/>
+    <meta property="og:locale" content="de_DE"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="<?php echo $site_title; ?>"/>
+    <meta property="og:description" content="<?php echo $meta_description; ?>"/>
+    <meta property="og:url" content="<?php echo $site_domain; ?>"/>
+    <meta property="og:site_name" content="<?php echo $site_name; ?>"/>
+    <meta name="twitter:card" content="summary"/>
     <meta name="twitter:label1" content="Verfasst von">
     <meta name="twitter:data1" content="<?php echo $meta_author; ?>">
 
-    <title><?php echo $site_title;?></title>
+    <title><?php echo $site_title; ?></title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png"/>
-    <link rel="shortcut icon" href="<?php echo $site_domain; ?>/assets/img/favicon.png" />
+    <link rel="shortcut icon" href="<?php echo $site_domain; ?>/assets/img/favicon.png"/>
     <!-- Font Awesome icons (free version)-->
     <link href="assets/fontawesome/css/all.css" rel="stylesheet">
     <!-- Google fonts-->
@@ -75,8 +75,8 @@ include 'php/variables.php';
         <?php
         if (!empty($site_slogan)) {
             echo "<p class=\"masthead-subheading font-weight-light mb-0\">" . $site_slogan . "</p>";
-        } else{
-          echo  "<p style='padding-top: 10%;'></p>";
+        } else {
+            echo "<p style='padding-top: 10%;'></p>";
         }
         ?>
     </div>
@@ -98,11 +98,26 @@ include 'php/variables.php';
             <div class="col-lg-4 mr-auto"><p class="lead"><?php echo $social_right; ?></p></div>
         </div>
         <!-- About Section Button-->
-        <div class="text-center mt-4">
-            <?php echo "<a class=\"btn btn-xl btn-outline-light\" href=\"" . $social_link . "\"  target=\"_blank\">"; ?>
-            <?php echo "<i class=\"" . $social_button . "\"></i>"; ?>
-            </a>
-        </div>
+        <?php if (empty($social_link2)): ?>
+            <div class="text-center mt-4">
+                <?php echo "<a class=\"btn btn-xl btn-outline-light\" href=\"" . $social_link1 . "\"  target=\"_blank\">"; ?>
+                <?php echo "<i class=\"" . $social_button1 . "\"></i>"; ?>
+                </a>
+            </div>
+        <?php else: ?>
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-2">
+                    <?php echo "<a class=\"btn btn-xl btn-outline-light\" href=\"" . $social_link1 . "\"  target=\"_blank\">"; ?>
+                    <?php echo "<i class=\"" . $social_button1 . "\"></i>"; ?>
+                    </a>
+                </div>
+                <div class="col col-lg-2">
+                    <?php echo "<a class=\"btn btn-xl btn-outline-light\" href=\"" . $social_link2 . "\"  target=\"_blank\">"; ?>
+                    <?php echo "<i class=\"" . $social_button2 . "\"></i>"; ?>
+                    </a>
+                </div>
+            </div>
+        <?php endif; ?>
     </div>
 </section>
 <!-- Contact Section-->
